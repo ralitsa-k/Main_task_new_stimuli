@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.3">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[2560, 1440]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[-1,-1,-1]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="trsut_define_game" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="Intro">
+      <TextComponent name="read">
+        <Param name="color" updates="constant" val="red" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.02" valType="code"/>
+        <Param name="name" updates="None" val="read" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Please read! You won't be able to do the experiment if you don't understand the instructions. " valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="instr">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.02" valType="code"/>
+        <Param name="name" updates="None" val="instr" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.15)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="&amp;#10;&amp;#10;In a trust game of two players (investor and trustee) the investor received £2 which they decided to keep or to give to the trustee. If they gave the money away the £2 were increased to £10 and the trustee decided what amount to return (from £0 to £10). The investors only gave away the £2 if they thought the trustee will return at least the £2. &amp;#10;&amp;#10;We took photos of the faces of the trustees and recorded their responses. These photos were tweaked a bit to make them the same size and to partly hide the identity of the players (see below). &amp;#10;&amp;#10;Your task is to try and guess how much money each of the trustees sent back on average to an investor.&amp;#10;&amp;#10;Using the mouse select the amount you think each person gave back (out of £10). Take your time and try to make an intuitive guess. Please use the full scale (from 0 to 10). &amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <ImageComponent name="faces_4">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="pair_faces.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="faces_4" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.12)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.7, 0.2)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <TextComponent name="space_button">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.02" valType="code"/>
+        <Param name="name" updates="None" val="space_button" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="20" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Press the space button when ready to start. " valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="20" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Thanks">
+      <TextComponent name="text_3">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Thank you for taking part! Your response has been recorded." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="response_screen">
+      <KeyboardComponent name="key_resp_5">
+        <Param name="allowedKeys" updates="constant" val="'left', 'right'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="90" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_4">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="img = 'upper_lower.png'" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="whiteUD">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$img" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="whiteUD" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.13, 0.04)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <PolygonComponent name="fix_cross2">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="fix_cross2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.03, 0.03)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="90" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="two_faces">
+      <CodeComponent name="random_dur">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="x = randint(low = 150, high = 200) &amp;#10;y = 250 - x&amp;#10;thisExp.addData('random_duration_two_faces', x)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="random_dur" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="faces">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$img_names" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="faces" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0,0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.23, 0.6)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="250" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+      </ImageComponent>
+      <MovieComponent name="loading">
+        <Param name="No audio" updates="None" val="False" valType="bool"/>
+        <Param name="backend" updates="None" val="moviepy" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="loop" updates="None" val="True" valType="bool"/>
+        <Param name="movie" updates="constant" val="giphy.gif" valType="str"/>
+        <Param name="name" updates="None" val="loading" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(30, 30)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="70" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$x-70" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </MovieComponent>
+      <ImageComponent name="Orangeframe">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$polygonPos" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Orangeframe" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.23, 0.6)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="$x" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$y" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="feedback">
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;&amp;#10;if event.getKeys(['left']):&amp;#10;    img = 'up.png'&amp;#10;    &amp;#10;if event.getKeys(['right']):&amp;#10;    img = 'down.png'" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="orange_UD">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$img" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="orange_UD" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.13, 0.04)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="90" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <PolygonComponent name="polygon_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="polygon_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.03, 0.03)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="90" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="cue">
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="z = randint(low = 60, high = 90) # values will range from 60 to 90&amp;#10;&amp;#10;thisExp.addData('random_duration_cue', z)&amp;#10;&amp;#10;&amp;#10;if Soc.thisTrialN in [5]:&amp;#10;    Soc.finished = True " valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+      <PolygonComponent name="fix_cross">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="$cueCol" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="hsv" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="$cueCol" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="hsv" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="fix_cross" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.03, 0.03)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$z" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="end_cross">
+      <CodeComponent name="code_5">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="r = randint(low = 90, high = 180) # values will range from 90 to 180&amp;#10;&amp;#10;thisExp.addData('random_duration_end_cross', r)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_5" valType="code"/>
+      </CodeComponent>
+      <PolygonComponent name="polygon">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="polygon" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.03, 0.03)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="frame N" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (frames)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$r" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="demo">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Example. First block is social and will run for 5 trials, then will be the non-social block. &amp;#10;&amp;#10;Left key is 'up', right key is 'down'.&amp;#10;&amp;#10;Press space to continue.  &amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="demo"/>
+    <LoopInitiator loopType="TrialHandler" name="Soc">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 1)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 2)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 3)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 117), ('order', 4)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 5)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 771), ('order', 6)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 662), ('order', 7)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 8)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 9)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 662), ('order', 10)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 11)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 117), ('order', 12)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 662), ('order', 13)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 14)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 15)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 16)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 17)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 18)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 19)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 20)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 21)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 22)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 23)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 24)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 25)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 26)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 27)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 28)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 29)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 30)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 31)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 32)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 33)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 34)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 35)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 36)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 37)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 38)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 444), ('order', 39)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 40)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 41)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 42)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 43)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 44)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 117), ('order', 45)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 771), ('order', 46)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 47)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 771), ('order', 48)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 117), ('order', 49)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 50)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 51)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 52)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 53)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 54)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 55)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 56)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 57)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 58)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 771), ('order', 59)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 60)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 61)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 62)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 63)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 64)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 65)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 66)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 67)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 444), ('order', 68)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 117), ('order', 69)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 70)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 71)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 72)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 73)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 74)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 75)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 76)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 117), ('order', 77)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 78)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 79)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 80)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 81)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 82)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 83)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 444), ('order', 84)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 335), ('order', 85)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 86)]), OrderedDict([('img_names', 'Soc_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 117), ('order', 87)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 771), ('order', 88)]), OrderedDict([('img_names', 'Soc_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 335), ('order', 89)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 90)]), OrderedDict([('img_names', 'Soc_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 771), ('order', 91)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 662), ('order', 92)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 444), ('order', 93)]), OrderedDict([('img_names', 'Soc_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 662), ('order', 94)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 226), ('order', 95)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 444), ('order', 96)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 97)]), OrderedDict([('img_names', 'Soc_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 444), ('order', 98)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 99)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', 553), ('order', 100)]), OrderedDict([('img_names', 'Soc_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 226), ('order', 101)]), OrderedDict([('img_names', 'Soc_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', 553), ('order', 102)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="pair_faces_Soc.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="Soc" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="cue"/>
+    <Routine name="two_faces"/>
+    <Routine name="response_screen"/>
+    <Routine name="feedback"/>
+    <Routine name="end_cross"/>
+    <LoopTerminator name="Soc"/>
+    <LoopInitiator loopType="TrialHandler" name="nonSoc">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 1)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 2)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 3)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 4)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 5)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 6)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 7)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 8)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 9)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 10)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 11)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 12)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 13)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 14)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 15)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 16)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 17)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 18)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 19)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 20)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 21)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 22)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 23)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 24)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 25)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 26)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 27)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 28)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 29)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 30)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 31)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 32)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 33)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 34)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 35)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 36)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 37)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 38)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 39)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 40)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 41)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 42)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 43)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 44)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 45)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 46)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 47)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 48)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 49)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 50)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 51)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 52)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 53)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 54)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 55)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 56)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 57)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 58)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 59)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 60)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 61)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 62)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 63)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 64)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 65)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 66)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 67)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 68)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 69)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 70)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 71)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 72)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 73)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 74)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 75)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 76)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 77)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 78)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 79)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 80)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 81)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 82)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 83)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 84)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 85)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 86)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 87)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 88)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 89)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 90)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 91)]), OrderedDict([('img_names', 'nonS_46.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 92)]), OrderedDict([('img_names', 'nonS_73.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 93)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 94)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 95)]), OrderedDict([('img_names', 'nonS_55.png'), ('cond', 'risk'), ('cueCol', [0, 0.5, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 96)]), OrderedDict([('img_names', 'nonS_64.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 97)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 98)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 99)]), OrderedDict([('img_names', 'nonS_82.png'), ('cond', 'zero'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 100)]), OrderedDict([('img_names', 'nonS_28.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'lower.png'), ('trigger_integers', None), ('order', 101)]), OrderedDict([('img_names', 'nonS_37.png'), ('cond', 'risk'), ('cueCol', [90, 1, 1]), ('polygonPos', 'upper.png'), ('trigger_integers', None), ('order', 102)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="pair_num_nonSoc.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="nonSoc" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="cue"/>
+    <Routine name="two_faces"/>
+    <Routine name="response_screen"/>
+    <Routine name="feedback"/>
+    <Routine name="end_cross"/>
+    <LoopTerminator name="nonSoc"/>
+  </Flow>
+</PsychoPy2experiment>
