@@ -24,5 +24,6 @@ the current participant. Right now, R should be checked if:
 - the participants has a consistent scale with at least 7 values 
 - the SDs are low 
 - there are 2 different faces for the social and non-social neutral trials
+
 If the above conditions are met, both files will work and the correct stimuli will be generated. Then the Psychopy files is opened and
 the two csv files produced by Matlab should be selected. No other changes are necessary. 
