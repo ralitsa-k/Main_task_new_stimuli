@@ -1,4 +1,4 @@
-This project deals with creating the stimuli for the main task of the Riks-prediction error experiment by Philiastides lab. 
+This project deals with creating the stimuli for the main task of the Risk-prediction error experiment by Philiastides lab. 
 
 It contains the data of multiple participants who took part in a pilot study (Trust game), aiming to determine the number 
 and type of faces necessary for the main task. 
